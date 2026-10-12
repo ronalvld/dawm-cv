@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum vitae de Ana Pérez, estudiante de Computación en ESPOL">
+    <title>Ana Pérez | Currículum vitae</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <h1>Ana Pérez</h1>
+            <p class="cargo">Estudiante de Computación · Desarrolladora web junior</p>
+        </div>
+        <nav aria-label="Secciones del CV">
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <p>Estudiante de <strong>Ingeniería en Computación</strong> interesada en el desarrollo de
+            aplicaciones web accesibles. Me gusta <em>aprender haciendo</em> y trabajar en equipo.</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <article class="item">
+                <h3>Ayudante de laboratorio</h3>
+                <p class="meta">ESPOL · <time datetime="2025-05">mayo 2025</time> – actualidad</p>
+                <ul>
+                    <li>Apoyo en prácticas de programación para 40 estudiantes.</li>
+                    <li>Preparación de guías de laboratorio en HTML.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <article class="item">
+                <h3>Ingeniería en Computación</h3>
+                <p class="meta">ESPOL · <time datetime="2023">2023</time> – en curso</p>
+            </article>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="etiquetas">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git y GitHub</li>
+                <li>Python</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <figure>
+                <img src="https://placehold.co/640x360" alt="Captura de la aplicación de tareas" width="640" height="360">
+                <figcaption>Aplicación de tareas con HTML, CSS y una API REST.</figcaption>
+            </figure>
+            <figure>
+                <video controls width="640" poster="https://placehold.co/640x360">
+                    <source src="https://placeholdervideo.dev/640x360" type="video/mp4">
+                    Tu navegador no puede reproducir video. <a href="media/presentacion.mp4">Descárgalo aquí</a>.
+                </video>
+                <figcaption>Video de presentación (1 minuto).</figcaption>
+            </figure>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form method="get" class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required autocomplete="name">
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required autocomplete="email">
+
+                <label for="motivo">Motivo</label>
+                <select id="motivo" name="motivo">
+                    <option value="empleo">Oferta de empleo</option>
+                    <option value="proyecto">Proyecto</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" minlength="10" required></textarea>
+
+                <label class="casilla">
+                    <input type="checkbox" name="acepto" required> Acepto ser contactado por correo
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Ana Pérez ·
+            <a href="https://github.com/usuario">GitHub</a></p>
+    </footer>
+</body>
+</html>
